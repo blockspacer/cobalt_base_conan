@@ -148,8 +148,8 @@ endif()
 
 # chromium_libxml
 find_package(chromium_libxml MODULE REQUIRED)
-if(TARGET chromium_libxml::chromium_libxml-static)
-  set(libxml_LIB chromium_libxml::chromium_libxml-static)
+if(TARGET chromium_libxml::chromium_libxml)
+  set(libxml_LIB chromium_libxml::chromium_libxml)
 else()
   message(FATAL_ERROR "not supported: using system provided chromium_libxml library")
 endif()
